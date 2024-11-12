@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth, initialscale=1.0">
+    <title>Resume</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/css/foundation.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+    
+</head>
+<body>
+
+    <div class="container"><center>
+        <image src="d:\66025638\121.png">
+        <h1 class="name">Chanyanuch Chanthaboon</h1>
+        <h4><span class="Position applied for">Back-end Devoloper</span></h4>
+        <div class="social-img">
+            
+        </div>
+        <p class="bio">
+            <h5>Committed to using our expertise in Frontend/Backend development to create stable and responsive websites and applications with a focus on efficient design and use of modern technologies.</h5>
+        </p>
+    </center>
+        <hr>
+        <h4><p style="background-color:#d2bcd7;">Contact me</p></h4>
+        <ul>
+            
+           
+            <h5><li><a href="https://www.facebook.com/profile.php?id=100018072904004&locale=th_TH" target="_blank"><i class="fa tw fa-facebook">   Chanyanuch Chanthaboon</i></a></li></h5>
+                <h5><li><a href="https://www.instagram.com/navnprxxq/" target="_blank"><i class="fa tw fa-instagram">    navnprxxq</i></a></li></h5>
+                    <h5><li><a href="https://github.com/Chanyanuch0" target="_blank"><i class="fa github fa-github">    Chanyanuch0</i></a></li></h5>
+                        <h5><image src="d:\66025638\22.png" width="30" height="30"></image><address><right>  361/12 Makamkoo, Nikhomphattana, Rayong 21180</right></address></h5>
+                            <h5><img src="d:\66025638\Screenshot 2024-11-10 214441.png" width="30" height="30"></img><left>   ID : preemok7766</left></h5>
+                                <h5><img src="d:\66025638\Screenshot 2024-11-10 214628.png" width="25" height="25"></img><left>    Thailand</left></h5>
+                                    <h5><img src="d:\66025638\Screenshot 2024-11-10 231918.png" width="25" height="25"><date>     04-01-2005</date></h5>
+                                        <h5><img src="d:\66025638\Screenshot 2024-11-10 234758.png" width="25" height="25">      063-245-3612</h5>
+
+                                    <h4><p style="background-color:rgb(210, 188, 215);">Education</h4></p>
+                                    <h5>University of Phayao<br>
+                                        Bachelor of Science in Computer Science<br>
+                                        Attended from June 2023 - present<br><br>
+                                        Bankhai High School <br>
+                                        Science and Math<br>
+                                        Attended from June 2020<br>
+                                        to March 2023<br>
+                                        GPA 3.19<br>
+                        
+                                </ul>
+                                <h4><p style="background-color:rgb(210, 188, 215);">Soft Skills</h4></p>
+                                    <h5><li>Adaptability</li>
+                                        <h5><li>Communication</li>
+                                            <h5><li>Time Management</li>
+                                                <h5><li>Effective collaborator</li>
+
+            <h4><p style="background-color:rgb(210, 188, 215);">Languages Skills</h4></p>
+            <div class="chart-container">
+                <canvas id="barChart" width="150" height="150"></canvas>
+              </div>
+            
+              <div class="chart-container">
+                <canvas id="lineChart" width="150" height="150"></canvas>
+              </div>
+            
+              <script>
+            
+                const ctxBar = document.getElementById('barChart').getContext('2d');
+                const barChart = new Chart(ctxBar, {
+                  type: 'bar',
+                  data: {
+                    labels: ['Thai', 'English', 'Chinese', ],
+                    datasets: [{
+                      label: '#Skills',
+                      data: [95, 65, 42],
+                      backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        
+                      ],
+                      borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        
+                      ],
+                      borderWidth: 1
+                    }]
+                  },
+                  options: {
+                    responsive: true,
+                    plugins: {
+                      title: {
+                        display: true,
+                        text: 'Programming Skills'
+                      }
+                    }
+                  }
+                });
+            
+                const ctxLine = document.getElementById('lineChart').getContext('2d');
+                const lineChart = new Chart(ctxLine, {
+                  type: 'line',
+                  data: {
+                    labels: ['Python', 'Java', 'HTML', 'C'],
+                    datasets: [{
+                      label: 'ProgrmmingSkills',
+                      data: [70, 54, 32, 10, ],
+                      fill: false,
+                      borderColor: 'rgba(75, 192, 192, 1)',
+                      tension: 0.1
+                    }]
+                  },
+                  options: {
+                    responsive: true,
+                    plugins: {
+                      title: {
+                        display: true,
+                        text: 'Tech Skills'
+                      }
+                    }
+                  }
+                });
+              </script>
+            
+    </div>
+</body>
+</html>
